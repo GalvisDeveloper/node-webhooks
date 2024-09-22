@@ -22,8 +22,6 @@ export class DiscordService {
             body: JSON.stringify(body),
         });
 
-        console.log(response)
-
         if (!response.ok) {
             console.log('Error sending message to Discord');
             return false;

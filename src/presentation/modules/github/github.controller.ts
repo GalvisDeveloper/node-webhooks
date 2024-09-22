@@ -9,7 +9,7 @@ export class GithubController {
 
     constructor(
         private readonly githubService: GithubService,
-        private readonly discordService: DiscordService,
+        private readonly discordService?: DiscordService,
     ) { }
 
     webhookHandler = (req: Request, res: Response) => {
